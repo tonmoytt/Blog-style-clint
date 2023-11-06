@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthConnect } from "../../AUthProvider/AUthProvider";
+import swal from "sweetalert";
 
 
 const Navbar = () => {
-
+    const { user, Signout } = useContext(AuthConnect)
     const navlink = <>
         <div className=" flex items-center">
 
@@ -36,7 +39,18 @@ const Navbar = () => {
 
         </div>
     </>
+    const signout = () => {
+        Signout()
+            .then(result => {
+                console.log(result.user);
+                swal("SignOUT!", "successfully Signout", "success");
 
+            })
+            .catch(error => {
+                console.error(error)
+                
+            })
+    }
     return (
         <div>
             <div className="navbar bg-black">
@@ -60,8 +74,24 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end  ">
+
+
+                    {
+                        user ? <>
+
+
+                            <span className="grid">
+                                <span className="text-white">{user.email} </span>    <button onClick={signout} className=" 
+             btn text-lg btn-outline btn-secondary
+             ">SignOut</button>
+                            </span>
+                        </>
+                            :
+                            <Link to="/login"><button className="btn text-lg btn-outline btn-secondary">Login</button></Link>
+                    }
+
+
                 </div>
             </div>
         </div>
@@ -71,22 +101,3 @@ const Navbar = () => {
 export default Navbar;
 
 
-<div className="navbar-end  ">
-
-    <button className="text-white ">Login</button>
-    {/* {
-    user ? <>
-
-
-  <span className="grid">
-  <span className="text-white">{user.email} </span>    <button onClick={signout} className=" 
-                 btn text-lg btn-outline btn-secondary
-                 ">SignOut</button>
-  </span>
-  </>
-        :
-        <Link to="/login"><button className="btn text-lg btn-outline btn-secondary">Appointment</button></Link>
-} */}
-
-
-</div>
