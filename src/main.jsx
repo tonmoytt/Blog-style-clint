@@ -13,11 +13,13 @@ import Login from './Components/AUthProvider/Login/Login';
 import AUthProvider from './Components/AUthProvider/AUthProvider';
 import AddBlog from './Components/all component/Navbar/AddBlog/AddBlog';
 import PrivetRoute from './Components/AUthProvider/PrivetRoute/PrivetRoute';
+import Error from './Components/Error/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <ROOTFile></ROOTFile>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: '/',
