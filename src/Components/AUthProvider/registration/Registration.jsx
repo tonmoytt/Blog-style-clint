@@ -24,6 +24,8 @@ const Registration = () => {
         const user = { name, country, email, password }
         console.log(user);
 
+         
+        
 
         setpassword('')
         if (password.length < 6) {
@@ -53,7 +55,7 @@ const Registration = () => {
             })
             .catch(error => {
                 console.error(error)
-                swal("error", "Please check & fully form fill up !", "error")
+                swal("error", "Please check email & fully form fill up !", "error")
             })
     }
 

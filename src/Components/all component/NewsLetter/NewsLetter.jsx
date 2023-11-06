@@ -7,19 +7,21 @@ const NewsLetter = () => {
         const form=event.target
         const email=form.email.value
         console.log(email);
-   
-    }
-    const newshendel = () => {
+
+
         if(email){
-          return  swal.fire("email");
-            
-            
-        }
+            return  swal("Subscribe!","successfully subscribe", "success");
+              
+              
+          }
+    }
+   
+      
         // else{
         //     swal("error", "please valid charecter", "error");
         // }
        
-    }
+    
     return (
         <div className="   bg-green-300">
             <div className="p-6 gap-6 items-center justify-between">
@@ -29,7 +31,7 @@ const NewsLetter = () => {
                 <form onSubmit={Newshendel} >
                 <div className="flex text-center gap-2">
                     <input type="email" name="email"  className="border-2 w-full px-4  " placeholder="Enter your Email" required />
-                    <button className="btn btn-secondary"  onClick={newshendel}><input type="submit" value="Submit" /></button>
+                    <button className="btn btn-secondary"  ><input type="submit" value="Submit" /></button>
                 </div>
                 </form>
             </div>
