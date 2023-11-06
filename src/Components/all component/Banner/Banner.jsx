@@ -16,7 +16,7 @@ const Banner = () => {
                         <h1 className="text-2xl md:text-4xl lg:text-4xl font-serif font-bold mb-10"> <span className="text-teal-300 font-extrabold md:text-7xl "> Stay curious. </span> 
                         </h1>
                         <p className="mb-5 text-white font-semibold">Discover stories, thinking, and expertise from writers on any topic.</p>
-                        <Link to="/login"><button className="btn font-semibold mt-6 btn-secondary">Buy Now</button></Link>
+                        <Link to="/login"><button className="btn font-semibold mt-6 btn-secondary">Start Reading</button></Link>
                     </div>
                 </div>
             </div>

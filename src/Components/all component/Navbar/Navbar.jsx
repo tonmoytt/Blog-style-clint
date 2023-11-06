@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthConnect } from "../../AUthProvider/AUthProvider";
 import swal from "sweetalert";
+import img from './../../../assets/img/loginuser.png'
 
 
 const Navbar = () => {
@@ -36,7 +37,12 @@ const Navbar = () => {
             <li className="mr-4 font-semibold text-white text-xl hover:underline hover:font-bold"><NavLink to="/allblog">All Blog</NavLink></li>
             <li className="mr-4 font-semibold text-white text-xl hover:underline hover:font-bold"><NavLink to="/featured">Featured Post</NavLink></li>
             <li className="mr-4 font-semibold text-white text-xl hover:underline hover:font-bold"><NavLink to="/wishlist">Wishlist</NavLink></li>
-
+{
+    user?
+     <></>
+    :
+    <li className="mr-4 font-semibold text-white text-xl hover:underline hover:font-bold"><NavLink to="/login">Login</NavLink></li>
+}
         </div>
     </>
     const signout = () => {
@@ -80,15 +86,17 @@ const Navbar = () => {
                     {
                         user ? <>
 
-
+                            {user.image}
                             <span className="grid">
-                                <span className="text-white">{user.email} </span>    <button onClick={signout} className=" 
-             btn text-lg btn-outline btn-secondary
+                                <span className="text-white">{user.email}  </span> <button onClick={signout} className=" btn text-lg btn-outline btn-secondary
              ">SignOut</button>
                             </span>
                         </>
                             :
-                            <Link to="/login"><button className="btn text-lg btn-outline btn-secondary">Login</button></Link>
+                            <>
+                                <img className="w-14 rounded-full pr-2 " src={img} alt="" />
+                                <Link to="/registration"><button className="btn text-lg btn-outline btn-secondary">Register</button></Link>
+                            </>
                     }
 
 

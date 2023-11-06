@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-4 justify-start py-6 mb-6 border md:items-center'>
                 <div>
-                    <h1 className='text-cyan-300 text-2xl pl-3 font-bold'>Nature-<span className='text-orange-400 font-bold'>Nurturers</span> </h1>
+                    <h1 className='text-cyan-300 text-2xl pl-3 font-bold'>FitLife-<span className='text-orange-400 font-bold'>Insights</span> </h1>
                 </div>
 
                 <div className='flex items-center justify-center'>
