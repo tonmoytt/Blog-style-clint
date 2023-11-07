@@ -1,34 +1,62 @@
-  [
-      {
-        "title": "The Power of Python: A Versatile Programming Language",
-        "image": "",
-        "category": "Tech & Programming",
-        "description": "Dive into the world of Python, one of the most versatile and widely used programming languages. Discover how Python can be your gateway to web development, data analysis, machine learning, and more. This blog post explores Python's elegance, simplicity, and its impact on the tech industry. Whether you're a seasoned developer or a beginner, you'll find valuable insights and inspiration to harness the power of Python in your projects."
-      },
-      {
-        "title": "Demystifying Machine Learning: A Beginner's Guide",
-        "image": "",
-        "category": "Tech & Programming",
-        "description": "Step into the exciting realm of machine learning with this beginner's guide. Explore the fundamental concepts, algorithms, and tools that power intelligent systems. We'll break down complex topics into understandable, real-world examples. By the end of this blog post, you'll have a solid foundation in machine learning and be ready to embark on your journey in building smart applications and predictive models."
-      },
-      {
-        "title": "Front-End Development: Crafting User-Friendly Web Experiences",
-        "image": "",
-        "category": "Tech & Programming",
-        "description": "Uncover the art and science of front-end development, where creativity meets technology. This blog post explores the principles and best practices of crafting engaging, user-friendly web interfaces. Learn about HTML, CSS, JavaScript, and the latest front-end frameworks that power modern web applications. Whether you're a web designer, developer, or just curious about the web's visual side, this post will help you create stunning, responsive websites that captivate your audience."
-      },
-      {
-        "title": "Cybersecurity in a Digital Age: Protecting Your Online World",
-        "image": "",
-        "category": "Tech & Programming",
-        "description": "In an increasingly interconnected world, cybersecurity is paramount. This blog post delves into the critical aspects of online security, from protecting your personal information to understanding the latest threats and hacking techniques. Discover how cybersecurity experts defend against cyberattacks and learn practical tips for safeguarding your digital life. By the end of this post, you'll be better equipped to navigate the digital landscape securely."
-      },
-      {
-        "title": "The Future of Tech: Trends and Innovations to Watch",
-        "image": "",
-        "category": "Tech & Programming",
-        "description": "Stay ahead of the curve with a deep dive into the future of technology. This blog post explores emerging tech trends, from artificial intelligence and blockchain to quantum computing and IoT. Gain insight into the innovations shaping industries and the potential impact on our daily lives. Whether you're a tech enthusiast, entrepreneur, or simply curious about the future, this post will ignite your imagination and prepare you for what's to come in the ever-evolving world of technology."
-      }
-    ]
-  
-  
+[
+  {
+    "image": "https://i.ibb.co/rd98VKL/1-Cooking-Delights.jpg",
+    "title": "Cooking Delights",
+    "description": "Explore the world of culinary creations and mouthwatering recipes.",
+    "category": "Cooking"
+  },
+  {
+    "image": "https://i.ibb.co/64x2s18/2-Discovering-Nature.jpg",
+    "title": "Discovering Nature",
+    "description": "Connect with nature and discover its beauty through our adventures.",
+    "category": "Nature"
+  },
+  {
+    "image": "https://i.ibb.co/mNnd2mk/3-Tech-Innovations.jpg",
+    "title": "Tech Innovations",
+    "description": "Stay informed about the latest technological innovations and trends.",
+    "category": "Technology"
+  },
+  {
+    "image": "https://i.ibb.co/4RPVg3W/4-Fashion-Trends.jpg",
+    "title": "Fashion Trends",
+    "description": "Stay stylish and updated on the latest fashion trends and tips.",
+    "category": "Fashion"
+  },
+  {
+    "image": "image5.jpg",
+    "title": "https://i.ibb.co/mzpTT84/5-Healthy-Living.jpg",
+    "description": "Achieve a healthier lifestyle with fitness tips and nutrition advice.",
+    "category": "Health"
+  },
+  {
+    "image": "https://i.ibb.co/K7jzKPV/6-Delicious-Recipes.jpg",
+    "title": "Delicious Recipes",
+    "description": "Savor delectable recipes from around the world with our culinary guides.",
+    "category": "Cooking"
+  },
+  {
+    "image": "https://i.ibb.co/DRy0bYs/7-Nature-s-Beauty.jpg",
+    "title": "Nature's Beauty",
+    "description": "Explore the wonders of nature and wildlife in stunning photographs.",
+    "category": "Nature"
+  },
+  {
+    "image": "https://i.ibb.co/pn0SB4k/8-Tech-Insights.jpg",
+    "title": "Tech Insights",
+    "description": "Get insights into the tech industry with in-depth articles and reviews.",
+    "category": "Technology"
+  },
+  {
+    "image": "https://i.ibb.co/r0Dcn8P/9-Fashion-Forward.jpg",
+    "title": "Fashion Forward",
+    "description": "Stay ahead in the world of fashion with our trendsetting advice.",
+    "category": "Fashion"
+  },
+  {
+    "image": "https://i.ibb.co/JzhLhyh/10-Healthy-Living-Tips.jpg",
+    "title": "Healthy Living Tips",
+    "description": "Discover tips and tricks for a healthier and happier life.",
+    "category": "Health"
+  }
+]

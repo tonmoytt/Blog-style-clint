@@ -14,6 +14,7 @@ import AUthProvider from './Components/AUthProvider/AUthProvider';
 import AddBlog from './Components/all component/Navbar/AddBlog/AddBlog';
 import PrivetRoute from './Components/AUthProvider/PrivetRoute/PrivetRoute';
 import Error from './Components/Error/Error';
+import AllBlog from './Components/all component/Navbar/AllBlog/AllBlog';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: '/addblog',
         element: <PrivetRoute><AddBlog></AddBlog></PrivetRoute>
+      },
+      {
+        path: '/allblog',
+        element: <PrivetRoute> <AllBlog></AllBlog></PrivetRoute>,
+        loader: () => fetch('http://localhost:5000/users')
       },
       {
         path: '/login',
