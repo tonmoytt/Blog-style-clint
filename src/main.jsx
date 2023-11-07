@@ -17,6 +17,7 @@ import Error from './Components/Error/Error';
 import AllBlog from './Components/all component/Navbar/AllBlog/AllBlog';
 import Wishlist from './Components/all component/Navbar/Wishlist/Wishlist';
 import Details from './Components/all component/Navbar/AllBlog/Details/Details';
+import Feature from './Components/all component/Navbar/Feature/Feature';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: '/allblog',
         element: <PrivetRoute> <AllBlog></AllBlog></PrivetRoute>,
+        loader: () => fetch('http://localhost:5000/users')
+      },
+      {
+        path: '/featured',
+        element: <PrivetRoute> <Feature></Feature></PrivetRoute>,
         loader: () => fetch('http://localhost:5000/users')
       },
       {
