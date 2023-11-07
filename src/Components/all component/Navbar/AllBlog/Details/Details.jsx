@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 
 
@@ -14,7 +15,21 @@ const Details = () => {
     const findloader = loaderData?.find(data => data._id === id)
     console.log(findloader);
 
-
+    const detialswishlistadd=() =>{
+        fetch('http://localhost:5000/wishlist',{
+            method:'POST',
+            headers:{
+                'context-type' : 'application/json'
+            },
+            body:JSON.stringify()
+           })
+           .then(res =>res.json())
+           .then(data =>{
+            console.log(data);
+            swal("succesfully added wishlist","check wishlist and confirm","success")
+           })
+        
+    }
      
     return (
         <div>
@@ -29,7 +44,7 @@ const Details = () => {
 
                         <div className="   mt-6  ">
  
-                            <Link>  <button   className="btn btn-warning w-full">Wishlist</button>
+                            <Link>  <button onClick={detialswishlistadd} className="btn btn-warning w-full">Wishlist</button>
                             </Link>
                         </div>
                     </div>
