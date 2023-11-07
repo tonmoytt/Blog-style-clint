@@ -8,6 +8,7 @@ export const AuthConnect = createContext(null)
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
+// eslint-disable-next-line react/prop-types
 const AUthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading,setloading]=useState(true)
@@ -33,9 +34,7 @@ const AUthProvider = ({ children }) => {
             setUser(currentUser)
             setloading(false)
         })
-        return () => {
-            Unsubscribes
-        }
+        return () => Unsubscribes()
     }, [])
 
 

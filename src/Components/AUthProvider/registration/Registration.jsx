@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthConnect } from "../AUthProvider";
 import swal from "sweetalert";
 
@@ -85,25 +85,25 @@ const Registration = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name="name" required placeholder="Your name" className="input input-bordered" required />
+                                <input type="text" name="name" placeholder="Your name" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Country</span>
                                 </label>
-                                <input type="text" name="country" required placeholder="Your Country" className="input input-bordered" required />
+                                <input type="text" name="country" placeholder="Your Country" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name="email" required placeholder="email" className="input input-bordered" required />
+                                <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" required name="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" name="password" placeholder="password" className="input input-bordered" required />
 
                             </div>
                             <div className="form-control mt-6">
