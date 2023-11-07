@@ -11,7 +11,7 @@ const ShowData = ({ Propsdata }) => {
             headers: {
                 'context-type': 'application/json'
             },
-            body: JSON.stringify(Propsdata)
+            body: JSON.stringify({Propsdata})
         })
             .then(res => res.json())
             .then(data => {
