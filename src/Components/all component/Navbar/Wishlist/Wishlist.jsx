@@ -4,7 +4,7 @@ import Showdatawishlist from "./Showdatawishlist";
 
 
 const Wishlist = () => {
-    const loder=useLoaderData( )
+    const loder = useLoaderData()
     console.log(loder);
     // const [data,setdata]=useState()
     // console.log(data);
@@ -16,10 +16,10 @@ const Wishlist = () => {
     // console.log(findloader);
     return (
         <div>
-            <p>nai {loder.length}</p>
-            <div>
+            <p className="text-4xl font-bold text-center my-6 text-teal-300">This is Your Wish List</p>
+            <div className="grid md:grid-cols-2">
                 {
-loder?.map(data =><Showdatawishlist key={data._id} propswishlist={data}></Showdatawishlist>)
+                    loder?.map(data => <Showdatawishlist key={data._id} propswishlist={data}></Showdatawishlist>)
                 }
             </div>
         </div>

@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 
 
-const ShowData = ({ Propsdata }) => {
-    const { _id, title, image, description } = Propsdata;
+const ShowData = ({ data }) => {
+    const { _id, title, image, description } = data;
 
     const hendelwishlistadd = () => {
         fetch('http://localhost:5000/wishlist', {
             method: 'POST',
             headers: {
-                'context-type': 'application/json'
+                'content-type': 'application/json'
             },
-            body: JSON.stringify({Propsdata})
+            body: JSON.stringify(data)
         })
             .then(res => res.json())
             .then(data => {
