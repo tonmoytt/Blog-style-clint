@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 
 
@@ -16,7 +17,7 @@ const ShowData = ({ data }) => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                alert('mamu kam hogaya')
+                swal("succesfully added wishlist","check wishlist and confirm","success")
             })
     }
     return (

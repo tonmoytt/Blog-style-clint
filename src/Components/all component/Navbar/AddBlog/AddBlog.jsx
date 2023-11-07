@@ -35,21 +35,22 @@ const AddBlog = () => {
 
                 <div className="text-center pb-10">
                     <div className="bg-gray-200 mt-10 md:px-10 md:pt-20 py-2">
-                        <input className="border-1 mr-4 w-1/3 md:px-4 py-2 rounded-lg" type="text" name="image" id="" placeholder="Photo Url" />
-                        <input className="border-1 w-1/3  px-4 py-2 rounded-lg" type="text" name="category" placeholder=" category" id="" />
+                        <input className="border-1 mr-4 w-1/3 md:px-4 py-2 rounded-lg" type="text" name="image" id="" placeholder="Photo Url" required/>
+
+                        <input className="border-1 w-1/3  px-4 py-2 rounded-lg" type="text" name="category" placeholder=" category" id="" required />
                     </div>
 
                     <div className="bg-gray-200  md:px-10  py-2">
-                        <input className="border-1 mr-4 w-1/3 px-4 py-2 rounded-lg" type="text" name="title" placeholder="Title" id="" />
-                        <input className="border-1 w-1/3  px-4 py-2 rounded-lg" type="text" name="description" placeholder="description" id="" />
+                        <input className="border-1 mr-4 w-1/3 px-4 py-2 rounded-lg" type="text" name="title" placeholder="Title" id="" required/>
+                        <input className="border-1 w-1/3  px-4 py-2 rounded-lg" type="text" name="description" placeholder="description" id="" required/>
                     </div>
 
                     <div className="bg-gray-200  md:px-10  py-2">
-                        <input className="border-1 w-1/2  px-4 py-2 rounded-lg" type="time" name="time" placeholder=" time" id="" />
+                        <input className="border-1 w-1/2  px-4 py-2 rounded-lg" type="time" name="time" placeholder=" time" id="" required/>
                     </div>
 
                     <div className="bg-gray-200  pb-10 md:px-10 py-2">
-                        <input className="border-1 w-1/2 pt-4 px-4 pb-20 rounded-lg" type="date" name="date" placeholder="Date" id="" />
+                        <input className="border-1 w-1/2 pt-4 px-4 pb-20 rounded-lg" type="date" name="date" placeholder="Date" id="" required/>
                     </div>
 
                     <div className="bg-gray-200  pb-10 px-10 py-2">
