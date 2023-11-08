@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 import Comment from "../Comment/Comment";
+import CommentUserShow from "../Comment/CommentUserShow/CommentUserShow";
 
 
 
@@ -59,11 +60,16 @@ const Details = () => {
                 </div>
                  
             </div>
-            <div>
-                
+            <div className=" mt-10 pl-40">
+                <CommentUserShow></CommentUserShow>
+               
             </div>
             <div className=" mt-10 pl-40">
+            <hr />
+            <div className="mt-10">
             <Comment></Comment>
+            </div>
+            
             </div>
             
         </div>

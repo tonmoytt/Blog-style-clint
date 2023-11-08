@@ -20,7 +20,7 @@ const Comment = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                swal("succesfully added wishlist", "check wishlist and confirm", "success")
+                swal("comment successful ", " .", "success")
             })
 
     }
@@ -41,8 +41,8 @@ const Comment = () => {
                     <div className="grid gap-3 items-center">
 
 
-                        <input type="text" name="name" placeholder="Your name" required className="input input-bordered text-center input-sm w-1/2 " />
-                        <textarea placeholder="Your comment" name="comment" required className="textarea textarea-bordered textarea-sm w-1/2" ></textarea>
+                    <input type="text" placeholder="Your name" name="name" className="input input-bordered input-warning w-full max-w-xs" />
+                        <textarea className="textarea textarea-secondary" name="comment" placeholder="Comment here"></textarea>
                         <button  className="btn w-1/2 btn-primary"> <input type="submit" value="Submit" /></button>
                     </div>
                 </form>
