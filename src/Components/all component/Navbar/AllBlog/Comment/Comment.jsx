@@ -37,12 +37,13 @@ const Comment = () => {
     return (
         <div  >
             <div className="mx-30">
+                <p className="text-lg mb-4 text-violet-400 font-semibold ">Comment here :</p>
                 <form onSubmit={hendelcomment}>
                     <div className="grid gap-3 items-center">
 
 
                     <input type="text" placeholder="Your name" name="name" className="input input-bordered input-warning w-full max-w-xs" />
-                        <textarea className="textarea textarea-secondary" name="comment" placeholder="Comment here"></textarea>
+                        <textarea className="textarea w-3/4 textarea-secondary" name="comment" placeholder="Comment here"></textarea>
                         <button  className="btn w-1/2 btn-primary"> <input type="submit" value="Submit" /></button>
                     </div>
                 </form>

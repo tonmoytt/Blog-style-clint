@@ -60,11 +60,11 @@ const Details = () => {
                 </div>
                  
             </div>
-            <div className=" mt-10 pl-40">
+            <div className=" mt-10 px-40">
                 <CommentUserShow></CommentUserShow>
                
             </div>
-            <div className=" mt-10 pl-40">
+            <div className=" mt-10 px-20">
             <hr />
             <div className="mt-10">
             <Comment></Comment>
