@@ -10,19 +10,12 @@ const Comment = () => {
         const user = { name, comment }
         console.log(user);
 
-
-
-    }
-
-
-
-    const hendeladdcomment = () => {
         fetch('http://localhost:5000/comment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify()
+            body: JSON.stringify(user)
         })
             .then(res => res.json())
             .then(data => {
@@ -34,16 +27,23 @@ const Comment = () => {
 
 
 
+    // const hendeladdcomment = () => {
+        
+
+    // }
+
+
+
     return (
-        <div>
-            <div >
+        <div  >
+            <div className="mx-30">
                 <form onSubmit={hendelcomment}>
-                    <div className="grid items-center">
+                    <div className="grid gap-3 items-center">
 
 
-                        <input type="text" name="name" placeholder="Your name" required className="input input-bordered input-sm w-full max-w-xs" />
-                        <textarea placeholder="Your comment" name="comment" required className="textarea textarea-bordered textarea-sm w-full max-w-xs" ></textarea>
-                        <button onClick={hendeladdcomment} className="btn btn-primary"> <input type="submit" value="Submit" /></button>
+                        <input type="text" name="name" placeholder="Your name" required className="input input-bordered text-center input-sm w-1/2 " />
+                        <textarea placeholder="Your comment" name="comment" required className="textarea textarea-bordered textarea-sm w-1/2" ></textarea>
+                        <button  className="btn w-1/2 btn-primary"> <input type="submit" value="Submit" /></button>
                     </div>
                 </form>
             </div>

@@ -34,6 +34,7 @@ const Details = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                
                 swal("succesfully added wishlist", "check wishlist and confirm", "success")
             })
 
@@ -56,9 +57,15 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <Comment></Comment>
+                 
             </div>
-
+            <div>
+                
+            </div>
+            <div className=" mt-10 pl-40">
+            <Comment></Comment>
+            </div>
+            
         </div>
     );
 };
