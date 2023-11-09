@@ -11,16 +11,16 @@ const Details = () => {
     const { id } = useParams()
     console.log(id);
     const loaderData = useLoaderData()
-    console.log(loaderData);
+    // console.log(loaderData);
 
-    console.log(data);
+    // console.log(data);
 
 
     useEffect(() => {
         const findloader = loaderData.find(data => data._id == id)
 
         setdata(findloader);
-    }, [setdata])
+    }, [loaderData, id])
 
 
 
@@ -50,6 +50,7 @@ const Details = () => {
                     <div className="card-body">
                         <h2 className="card-title">   {data?.title} </h2>
                         <p className="">   {data?.description} </p>
+                        <p className="mt-4 mb-10 font-semibold text-xl  text-indigo-400">   {data?.category} </p>
 
                         <div className="   mt-6  ">
 

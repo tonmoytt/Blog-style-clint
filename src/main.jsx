@@ -18,6 +18,7 @@ import AllBlog from './Components/all component/Navbar/AllBlog/AllBlog';
 import Wishlist from './Components/all component/Navbar/Wishlist/Wishlist';
 import Details from './Components/all component/Navbar/AllBlog/Details/Details';
 import Feature from './Components/all component/Navbar/Feature/Feature';
+import UpdateComment from './Components/all component/Navbar/AllBlog/Comment/CommentUserShow/UpdateUsr/UpdateComment';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('http://localhost:5000/users')
       },
       {
         path: '/addblog',
@@ -52,6 +54,16 @@ const router = createBrowserRouter([
         path: '/details/:id',
         element: <PrivetRoute> <Details></Details></PrivetRoute>,
         loader: () => fetch('http://localhost:5000/users')
+      },
+      {
+        path: '/comment/:id',
+        element: <PrivetRoute> <Details></Details></PrivetRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+      },
+      {
+        path: '/updatecomment/:id',
+        element: <PrivetRoute> <UpdateComment></UpdateComment></PrivetRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/comment/${params.id}`)
       },
       {
         path: '/login',

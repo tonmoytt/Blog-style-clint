@@ -1,10 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
 
-
 const ShowData = ({ data }) => {
-    const { _id, title, image, description } = data;
+    const { _id, title, image,category, description } = data;
 
     const hendelwishlistadd = () => {
         fetch('http://localhost:5000/wishlist', {
@@ -28,6 +28,7 @@ const ShowData = ({ data }) => {
             
  
                     <p className="mt-2">{description}</p>
+                    <p className="mt-4 mb-10 font-semibold text-xl  text-indigo-400">{category}</p>
             
             <div className="mt-6 card-actions justify-between">
                 <Link to={`/details/${_id}`}><button className="btn btn-primary ">DETAILS</button></Link>

@@ -1,6 +1,7 @@
 import swal from "sweetalert";
 
 const Comment = () => {
+    
 
     const hendelcomment = event => {
         event.preventDefault()
@@ -44,7 +45,7 @@ const Comment = () => {
 
                     <input type="text" placeholder="Your name" name="name" className="input input-bordered input-warning w-full max-w-xs" />
                         <textarea className="textarea w-3/4 textarea-secondary" name="comment" placeholder="Comment here"></textarea>
-                        <button  className="btn w-1/2 btn-primary"> <input type="submit" value="Submit" /></button>
+                        <button  className="btn w-1/3 btn-primary"> <input type="submit" value="Submit" /></button>
                     </div>
                 </form>
             </div>

@@ -88,6 +88,7 @@ const Navbar = () => {
 
                             {user.image}
                             <span className="grid">
+                                {user.img}
                                 <span className="text-white">{user.email}  </span> <button onClick={signout} className=" btn text-lg btn-outline btn-secondary
              ">SignOut</button>
                             </span>
