@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/all component/Home/Home';
 import ROOTFile from './Components/all component/ROOTFile/ROOTFile';
-import Registration from './Components/AUthProvider/registration/registration';
+ 
 import Login from './Components/AUthProvider/Login/Login';
 import AUthProvider from './Components/AUthProvider/AUthProvider';
 import AddBlog from './Components/all component/Navbar/AddBlog/AddBlog';
@@ -19,6 +19,7 @@ import Wishlist from './Components/all component/Navbar/Wishlist/Wishlist';
 import Details from './Components/all component/Navbar/AllBlog/Details/Details';
 import Feature from './Components/all component/Navbar/Feature/Feature';
 import UpdateComment from './Components/all component/Navbar/AllBlog/Comment/CommentUserShow/UpdateUsr/UpdateComment';
+import Signup from './Components/AUthProvider/Signup/Signup';
 
 const router = createBrowserRouter([
   {
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/registration',
-        element: <Registration></Registration>
+        element: <Signup></Signup>
       },
     ]
   },
